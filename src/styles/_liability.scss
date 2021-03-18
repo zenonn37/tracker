@@ -1,0 +1,33 @@
+.page-grid {
+  display: grid;
+  grid-template-areas: "main sidebar";
+  grid-template-columns: auto 300px;
+}
+
+.main {
+  grid-area: main;
+  height: calc(100vh - 100px);
+  padding: 0.5rem;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  height: calc(100vh - 100px);
+  padding: 0.5rem;
+}
+.sub-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.btn-circle {
+  width: 36px;
+  height: 36px;
+  background-color: cadetblue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
