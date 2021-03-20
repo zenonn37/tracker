@@ -7,9 +7,15 @@
 
 .side-nav {
   grid-area: nav;
-  background: gray;
+  background: white;
   height: 100vh;
   width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .logo {
+    flex: 1;
+  }
 }
 .header {
   grid-area: header;

@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import NavBar from "./components/layout/NavBar";
 import NotFound from "./views/404";
 import Assets from "./views/Assets";
 import Auth from "./views/Auth";
@@ -10,7 +11,9 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <div className="side-nav">Navbar</div>
+        <NavBar />
+
+        <div className="header">Login</div>
         <div className="main">
           <Switch>
             <Route path="/" exact component={Auth} />
